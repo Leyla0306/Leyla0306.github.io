@@ -1,0 +1,17 @@
+-
+  var links = [
+    {img:"tv.svg", link: "#"},
+    {img:"f.svg", link: "#"},
+    {img:"g.svg", link: "#"},
+    {img:"in.svg", link: "#"},
+  ]
+
+.promo 
+  img.promo__avatar(src="img/imag.png" alt="")
+  h1.h1 WP-Indigo 
+  p Just another WordPress theme
+  ul.promo__links 
+    each link in links 
+      li 
+        a(href=link.link) 
+          img(src="img/"+link.img, alt="")

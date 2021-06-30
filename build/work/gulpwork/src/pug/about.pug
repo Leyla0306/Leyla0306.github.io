@@ -1,0 +1,88 @@
+extends templates/main
+
+block variables 
+  - var currentPageLink = 'about.html'
+  - var title ='О сайте'
+
+block content
+  .container 
+    h1.h1 About
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    -
+      var lists =  [
+         {
+           title: 'Skills',
+           items: [
+             {
+               text: 'HTML – Jade – Haml – Erb', 
+             },
+             {
+               text: 'Responsive (Mobile First)' ,
+             },
+             {
+               text: 'CSS (Stylus, Sass, Less)', 
+             },
+             {
+               text: 'Css Frameworks (Bootstrap, Foundation)', 
+             },
+             {
+               text: 'Javascript (Design Patterns, Testes)', 
+             },
+             {
+               text: 'NodeJS', 
+             },
+             {
+               text: 'AngularJS – ReactJS', 
+             },
+             {
+               text: ' Grunt – Gulp – Yeoman', 
+             },
+             {
+               text: 'Git', 
+             },
+             {
+               text: 'PHP' ,
+             },
+             {
+               text: 'Python', 
+             },
+             {
+               text: 'MySQL – MongoDB', 
+             },
+             {
+               text: 'Scrum and Kanban', 
+             },
+             {
+               text: 'TDD e Continuous Integration ' ,
+             },
+           ]
+         },
+          {
+            title: ' Projects',
+            items: [ 
+              {
+               text: 'Lorem Lorem',
+              },
+              {
+               text: 'Ipsum Dolor',
+             },
+             {
+               text: ' Dolor Lorem',
+             },
+           ] 
+         }
+       ]
+    each list in lists 
+      h3.h3=list.title 
+
+      ul.list
+        each item in list.items 
+          li=item.text 
+
+
+
+
+
+
+
