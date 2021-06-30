@@ -1,0 +1,21 @@
+header.header
+
+ .container 
+  strong.logo FRONTEND 
+  nav(id="menu").header__nav
+    a.mobile-nav_close(href="#close") «
+    -
+      var menu = [
+          {name: 'Главная', link: 'index.html'},
+          {name: 'Обо мне', link: 'about.html'},
+          {name: 'Работы', link: 'work.html'},
+          {name: 'Контакты', link: 'contact.html'},
+      ] 
+     
+    ul 
+      each item in menu
+        li 
+          a(href=item.link)=item.name 
+  a.mobile-nav_open(href="#menu") ☰
+
+    

@@ -1,0 +1,38 @@
+extends templates/main 
+
+block variables 
+    - var currentPageLink = 'work.html'
+    - var title = 'Портфолио'
+    - var descr = 'Мои работы'
+
+block content 
+  .work
+   
+  
+   .work__block 
+     img.work-img(src="img/trafal.png", alt="")
+     h2.h2 Адаптивная вёрстка
+     a.link(href="trafal.html") Обзор
+   .work__block 
+     img.work-img(src="img/anime.png", alt="")
+     h2.h2  Анимации появления WOW.js
+     a.link(href="anime.html") Обзор
+   .work__block  
+     img.work-img(src="img/blog.png", alt="")
+     h2.h2  Многостраничный сайт
+     a.link(href="blog.html") Обзор
+   .work__block  
+     img.work-img(src="img/mas.png", alt="")
+     h2.h2 Математический тренажер 
+     a.link(href="mas.html") Обзор
+   .work__block  
+     img.work-img(src="img/pomodor.png", alt="")
+     h2.h2 Помодоро таймер
+     a.link(href="pomodor.html") Обзор
+   .work__block  
+     img.work-img(src="img/x-0.png", alt="")
+     h2.h2 Крестики нолики
+     a.link(href="x-0.html") Обзор
+   
+ 
+  include blocks/footer

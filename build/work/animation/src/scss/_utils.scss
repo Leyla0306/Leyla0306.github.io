@@ -1,0 +1,70 @@
+.label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 72px;
+        height: 2px;
+        background: $accent;
+        margin-right: 32px;
+    }
+}
+
+.h1 {
+    font-family: $second-font;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 100px;
+    text-transform: capitalize;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.link {
+    font-weight:bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: currentColor;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-left: 16px;
+    }
+    &_accent {
+        color: $accent;
+    }
+    
+}
+.h2 {
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    margin: 27px 0;
+
+}
+.text {
+    max-width: 632px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 27px;
+}
+.logo  {
+    font-family: $second-font;
+
+    animation: fadeInLeft 1s;
+  } 

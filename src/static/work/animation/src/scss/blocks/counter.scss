@@ -1,0 +1,63 @@
+@keyframes fadeInTop {
+    
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+
+  40% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.counter {
+    position: fixed;
+    top: 305px;
+    right: 80px;
+    list-style: none;
+    text-align: right;
+
+    a {
+        color: currentColor;
+        display: block;
+        text-decoration: none;
+        padding: 20px 32px 20px 20px;
+        border-right: 3px solid rgba($white, 0.5);
+        transition: border-right .3s;
+
+        &.active {
+            border-right: 3px solid $white;
+        }
+    }
+
+    li {
+        opacity: 0;
+
+        &:nth-child(1) {
+            animation: fadeInTop 1s;
+            animation-delay: 2.9s;
+            animation-fill-mode: forwards;
+          }
+      
+          &:nth-child(2) {
+            animation: fadeInTop 1s;
+            animation-delay: 3.2s;
+            animation-fill-mode: forwards;
+          }
+      
+          &:nth-child(3) {
+            animation: fadeInTop 1s;
+            animation-delay: 3.5s;
+            animation-fill-mode: forwards;
+          }
+      
+          &:nth-child(4) {
+            animation: fadeInTop 1s;
+            animation-delay: 3.8s;
+            animation-fill-mode: forwards;
+          }
+    }
+}

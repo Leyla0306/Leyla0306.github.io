@@ -1,0 +1,12 @@
+extends templates/main 
+
+block variables 
+    - var currentPageLink = 'about.html'
+    - var title = 'Обо мне'
+    - var descr = 'Блог'
+
+block content 
+ img(src="../img/foto.png", alt="")
+ p.text В каждом проекте, который  делаю, я стараюсь изучить что-нибудь новое.
+  
+ include blocks/footer

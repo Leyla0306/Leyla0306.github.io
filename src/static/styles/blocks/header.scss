@@ -1,0 +1,45 @@
+.header {
+
+    & > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        
+        ul {
+            display: flex;
+            list-style: none;
+            white-space: nowrap;
+          }
+        & > ul > li {
+            margin-right: 40px;
+        }
+
+        & ul a {
+         color: currentColor;
+         text-decoration: none;
+         font-size: 20px;
+         margin-right: 80px;
+         font-weight: 700;
+
+        }
+        & ul a:hover {
+         color: blue;
+        }
+    }
+}
+.mobile-nav_close {
+   
+    font-size: 70px;
+    color: currentColor;
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .mobile-nav_open {
+    text-decoration: none;
+    font-size: 40px;
+  }

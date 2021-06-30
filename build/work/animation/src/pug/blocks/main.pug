@@ -1,0 +1,55 @@
+img.main__bg(src="../img/BG.jpg", alt="")
+
+
+//- Main
+main.main
+  //- Header
+  header.header 
+    //- Logo
+    strong.logo MNTN
+    //- Nav
+    -
+      var nav = [
+        ['#', 'Equipment'],
+        ['#', 'About us'],
+        ['#', 'Blog']
+      ]
+
+    nav#menu.header__nav
+      a.mobile-nav_close(href="#close") Close
+      ul
+        each link in nav
+          li
+            a(href=link[0])=link[1]
+    
+    a.header__account
+      img(src="../img/cart.svg", alt="")
+      span Account
+
+    a.mobile-nav_open(href="#menu", style="display: none") Menu
+  //- Social links
+  .main__social
+    span Follow us
+    a(href="#") 
+      img(src="../img/instagram.svg", alt="")
+    a(href="#") 
+      img(src="../img/twitter.svg", alt="")
+
+  //- Content
+  .main__content
+    span.label A Hiking guide
+    h1.h1 Be prepared for the Mountains and beyond!
+    a.link(href="#")
+      span scroll down
+      img(src="../img/strelca.svg", alt="")
+
+  //- Section counter
+  ul.counter
+    li
+      a(href="#").active Start
+    li
+      a(href="#") 01
+    li
+      a(href="#") 02
+    li
+      a(href="#") 03
