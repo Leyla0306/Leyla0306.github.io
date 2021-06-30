@@ -71,7 +71,10 @@ img {
 .work-img {
   width: 250px;
   height: 350px;
-  border: 2px solid gray;
+  padding: 5px;
+}
+.work-img:hover {
+  background: yellow;
 }
 .work .link {
   text-decoration: none;
@@ -186,7 +189,10 @@ img {
 .work-img {
   width: 250px;
   height: 350px;
-  border: 2px solid gray;
+  padding: 5px;
+}
+.work-img:hover {
+  background: yellow;
 }
 .work .link {
   text-decoration: none;
