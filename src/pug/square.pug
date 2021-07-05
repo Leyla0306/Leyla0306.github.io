@@ -1,0 +1,20 @@
+extends templates/main 
+
+block variables 
+    - var currentPageLink = 'square.html'
+    - var title = 'Моя работа'
+    - var descr = 'Читай'
+
+block content 
+  hr
+  .block
+      .block__descr
+          p.block__descr-text Pomodoro - это метод управления временем,который использует таймер для разбивки работы на интервалы, обычно продолжительностью 25 минут, разделенные короткими перерывами. В этом руководстве вы узнаете, как создать такой таймер в браузере с помощью JavaScript.
+          h3.h3 Программа изучения во время проекта :
+          ul 
+              li  Библиотека jquery 
+              li  Верстка с Gulp
+              li  Реализовывать таймер в js
+      .block__item  
+          img.block__item-img(src="img/square2.png" alt="")
+          a.link(href="work/square/index.html") Просмотреть

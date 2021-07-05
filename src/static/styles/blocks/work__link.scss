@@ -1,0 +1,69 @@
+.block {
+    margin: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    
+
+    &__descr {
+        max-width: 300px;
+        margin-right: 20%;
+
+        ul {
+            padding: 0;
+
+            li {
+                font-size: 20px;
+            }
+        }
+        .h3 {
+            font-size: 30px;
+        }
+
+        &-text {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+       
+      
+    }
+    &__item-img {
+        width: 350px;
+        height: 650px ;
+        object-fit: contain;
+        border: 3px solid rgb(155, 76, 76) ;
+        background: rgb(95, 91, 91);
+        margin-left: 40px;
+        margin-right: 70px;
+
+        
+    }
+    
+
+    &__item {
+        
+        & > .link {
+      
+            background: rgb(87, 77, 77);
+            padding: 15px 15px;
+            border-radius: 10px;
+            
+            &:hover {
+                background:gray;
+                color: #000;
+                
+            }
+        }
+    }
+    
+    
+  
+   
+
+}
+
+

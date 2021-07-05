@@ -7,18 +7,22 @@
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leyla0306/Leyla0306.github.io.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/Leyla0306/Leyla0306.github.io/issues"
+  },
+  "homepage": "https://github.com/Leyla0306/Leyla0306.github.io#readme",
   "dependencies": {
-    "animation": "^0.1.3",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.4",
     "gulp": "^4.0.2",
-    "gulp-pug": "^4.0.1",
+    "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "parallax-js": "^3.1.0",
-    "sass": "^1.34.0"
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
   }
 }
