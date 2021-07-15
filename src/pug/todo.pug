@@ -1,0 +1,20 @@
+extends templates/main 
+
+block variables 
+    - var currentPageLink = 'todo.html'
+    - var title = 'Моя работа'
+    - var descr = 'Читай'
+
+block content 
+  hr
+  .block
+      .block__descr
+          p.block__descr-text Это простой список дел или список задач.
+          h3.h3 Программа изучения во время проекта :
+          ul 
+              li  Библиотека jquery 
+              li  Верстка с Gulp
+              li  Реализовывать таймер в js
+      .block__item  
+          img.block__item-img(src="img/todoList.png", alt="")
+          a.link(href="work/react_todo/public/index.html") Просмотреть

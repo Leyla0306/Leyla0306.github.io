@@ -1,10 +1,24 @@
 extends templates/main 
 
 block variables 
-    - var currentPageLink = 'contact.html'
-    - var title = 'Контакты'
-    - var descr = 'Связь'
+  - var currentPageLink = 'contact.html'
+  - var title = 'Контакты'
+  - var descr = 'Связь'
 
 block content 
-  p.text Всегда на связи :
-  
+ .contact 
+   h1.h1 Мои контакты
+   ul
+     li 
+      img.contact_img(src="img/whatsapp.png" alt="")
+      a.contact_link(href="https://wa.me/+996551372732") WhatsApp
+     li 
+      img.contact_img(src="img/telegram.png" alt="") 
+      a.contact_link(href="#") Телеграм
+     li 
+      img.contact_img(src="img/instagram.png" alt="") 
+      a.contact_link(href="#") Инстаграм
+     li 
+      img.contact_img(src="img/contact.png" alt="")
+      a.contact_link(href="tel:+996551372732") Контакты
+

@@ -1,0 +1,20 @@
+extends templates/main 
+
+block variables 
+    - var currentPageLink = 'calc.html'
+    - var title = 'Моя работа'
+    - var descr = 'Читай'
+
+block content 
+  hr
+  .block
+      .block__descr
+          p.block__descr-text 
+          h3.h3 Программа изучения во время проекта :
+          ul 
+              li  Библиотека jquery 
+              li  Верстка с Gulp
+              li  Реализовывать таймер в js
+      .block__item  
+          img.block__item-img(src="img/proect2.png" alt="")
+          a.link(href="work/proekt3/build/index.html") Просмотреть

@@ -13,6 +13,7 @@
       text-decoration: none;
       font-size: 40px;
     }
+     
     .header__nav {
     position: fixed;
     z-index: 999;
@@ -42,4 +43,9 @@
       margin: 15px 15px;
       margin-bottom: 30px;
     }
+   
+     .about_text {
+       margin: 20px;
+     }
+    
      }
