@@ -1,7 +1,6 @@
 {
   "name": "portfoliomy",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -24,5 +23,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.35.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
