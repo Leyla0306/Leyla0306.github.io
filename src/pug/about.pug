@@ -1,18 +1,32 @@
 extends templates/main 
 
 block variables 
-    - var currentPageLink = 'about.html'
-    - var title = 'Обо мне'
-    - var descr = 'Блог'
+  - var currentPageLink = 'about.html'
+  - var title = 'Обо мне'
+  - var descr = 'Блог'
 
 block content
- .about 
-  img.about_img(src="img/foto.png", alt="")
-  p.about_text Привет! Меня зовут Лейла &#128579.В данный момент прохожу обучения по професии Frontend-разрабочик. Готова по настоящему усердно работать  и учиться.Обладаю дисциплиной и юмором  &#128521 В каждом проекте, который  делаю, я стараюсь изучить что-нибудь новое.
-  
-   
-  include blocks/footer 
-    
-    h1.h1 Frontend-разработчик.Профессиональная верстка сайтов по современным стандартам.
+ .block__content
+  .about 
+    img.about_img(src="img/foto.png" alt="")
+    p.about_text Привет! Меня зовут Лейла &#128579.В данный момент прохожу обучения по професии Frontend-разрабочик. Готова по настоящему усердно работать  и учиться.Обладаю дисциплиной и юмором  &#128521 В каждом проекте, который  делаю, я стараюсь изучить что-нибудь новое.
+  .contact 
+    h1.h1 Мои контакты
+    ul
+      li 
+        img.contact_img(src="img/whatsapp.png" alt="")
+        a.contact_link(href="https://wa.me/+996551372732") WhatsApp
+      li 
+        img.contact_img(src="img/telegram.png" alt="") 
+        a.contact_link(href="#") Телеграм
+      li 
+        img.contact_img(src="img/instagram.png" alt="") 
+        a.contact_link(href="#") Инстаграм
+      li 
+        img.contact_img(src="img/contact.png" alt="")
+        a.contact_link(href="tel:+996551372732") Контакты
 
-  
+
+
+
+ include blocks/footer 

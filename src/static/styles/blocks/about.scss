@@ -1,22 +1,60 @@
-
 .about {
-    
- padding: 0;
- margin: 0;
 
- &_text {
-     max-width: 350px;
-     margin-left: 30px;
-     font-size: 20px;
-     font-weight: bold;
+
+    padding: 0;
+    margin: 0;
+
+    &_text {
+        max-width: 350px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: bold;
 
 
     }
+
     &_img {
         max-width: 100%;
         width: 250px;
         margin-left: 30px;
-       
+
     }
 
+
+
+
+
+  
+
+    ul {
+        padding: 0;
+
+        li {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            list-style: none;
+
+
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                color: darkblue;
+                margin-left: 10px;
+            }
+        }
+    }
 }
+    .block__content {
+        display: flex;
+        align-items: center;
+    
+        .about {
+            margin-right: 60px;
+            
+        }
+    
+        .contact {
+            margin-left: 60px;
+        }
+    }

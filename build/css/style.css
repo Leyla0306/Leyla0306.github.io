@@ -162,6 +162,18 @@ img {
   margin-left: 30px;
 }
 
+.block__content {
+  display: flex;
+  align-items: center;
+}
+.block__content .about {
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.block__content .contact {
+  margin-left: 50px;
+}
+
 @media (min-width: 870px) {
   .mobile-nav_close {
     display: none;
@@ -377,6 +389,18 @@ img {
   max-width: 100%;
   width: 250px;
   margin-left: 30px;
+}
+
+.block__content {
+  display: flex;
+  align-items: center;
+}
+.block__content .about {
+  margin-right: 50px;
+  margin-top: 30px;
+}
+.block__content .contact {
+  margin-left: 50px;
 }
 
 .text {
